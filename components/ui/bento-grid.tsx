@@ -3,17 +3,20 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
 
 import { links } from "@/config";
 import { techStack } from "@/data";
-import animationData from "@/data/confetti.json";
 import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { MagicButton } from "./magic-button";
 
 import { GridGlobe } from "../grid-globe";
+
+const BentoGridLottie = dynamic(() => import("./bento-grid-lottie"), {
+  ssr: false,
+});
 
 export const BentoGrid = ({
   className,
@@ -161,21 +164,7 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="group relative mt-5">
-              <button
-                tabIndex={-1}
-                className="pointer-events-none absolute -bottom-5 right-0 cursor-default"
-              >
-                <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYMid slice",
-                    },
-                  }}
-                />
-              </button>
+              <BentoGridLottie copied={copied} />
 
               <MagicButton
                 title={copied ? "Email copied!" : "Copy my email"}
