@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Download } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Home() {
   return (

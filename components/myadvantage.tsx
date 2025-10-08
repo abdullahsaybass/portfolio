@@ -7,7 +7,6 @@ import {
   SiAdobeillustrator,
   SiSketch,
   SiHtml5,
-  SiCss3,
   SiJavascript,
   SiBootstrap,
   SiWordpress,

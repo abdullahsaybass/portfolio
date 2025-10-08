@@ -31,7 +31,7 @@ const FigmaPage = () => {
         <ProjectExp />
         
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

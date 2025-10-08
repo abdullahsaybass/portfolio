@@ -60,7 +60,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-400 text-sm">
             <li>samprada@portfolio.com</li>
             <li>+977-9812345678</li>
-            <li>Kathmandu, Nepal</li>
+            <li>Perth, AU</li>
             <li className="flex justify-center lg:justify-start items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-green-500" />
               <span className="text-green-400">Available for work</span>
