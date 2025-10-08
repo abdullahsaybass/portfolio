@@ -6,7 +6,8 @@ type MagicButtonProps = {
   icon?: React.ReactNode;
   position?: "left" | "right";
   handleClick?: () => void;
-  className?: string; // ✅ renamed from `otherClasses`
+  className?: string;       // ✅ supports new usage
+  otherClasses?: string;    // ✅ supports old usage
   asChild?: boolean;
 };
 
@@ -16,6 +17,7 @@ export const MagicButton = ({
   position,
   handleClick,
   className,
+  otherClasses,
   asChild = false,
 }: MagicButtonProps) => {
   return (
@@ -27,14 +29,15 @@ export const MagicButton = ({
       onClick={handleClick}
       tabIndex={asChild ? -1 : undefined}
     >
-      {/* Rotating gradient border */}
+      {/* Animated border gradient */}
       <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-      
-      {/* Inner button layer */}
+
+      {/* Inner button content */}
       <span
         className={cn(
           "inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl",
-          className // ✅ allows gradient, color, etc. from parent
+          className,
+          otherClasses // ✅ keeps backward compatibility
         )}
       >
         {position === "left" && icon}
