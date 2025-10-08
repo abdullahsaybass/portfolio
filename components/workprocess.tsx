@@ -82,7 +82,8 @@ const workSteps = [
 ]
 
 export default function WorkProcess() {
-  const timelineRef = useRef(null)
+  // ✅ Fixed typing here
+  const timelineRef = useRef<HTMLDivElement | null>(null)
   const [targetHeight, setTargetHeight] = useState(0)
   const [smoothHeight, setSmoothHeight] = useState(0)
 
@@ -118,7 +119,10 @@ export default function WorkProcess() {
       {/* Header */}
       <section className="pt-16 pb-12 text-center">
         <h1 className="text-3xl md:text-5xl font-light mb-4">
-          My <span className="bg-gradient-to-r from-[#4e44ce] to-[#25d366] bg-clip-text text-transparent font-semibold">Frontend Process</span>
+          My{' '}
+          <span className="bg-gradient-to-r from-[#4e44ce] to-[#25d366] bg-clip-text text-transparent font-semibold">
+            Frontend Process
+          </span>
         </h1>
         <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto px-4">
           A balanced blend of creativity and structure to transform design concepts into smooth, interactive digital experiences.

@@ -13,7 +13,7 @@ export default function Footer() {
           <h3 className="text-2xl font-semibold text-white mb-3">Samprada Aryal</h3>
           <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs mx-auto lg:mx-0">
             Creating beautiful, functional digital experiences that make a
-            difference. Let&aposs build something amazing together.
+            difference. Let&apos;s build something amazing together.
           </p>
           <div className="flex justify-center lg:justify-start gap-4">
             {[
@@ -39,18 +39,13 @@ export default function Footer() {
         <div className="text-center lg:text-left">
           <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
           <ul className="space-y-2 text-gray-400 text-sm">
-            {["Home", "About", "Projects", "Services", "Contact"].map(
-              (link, i) => (
-                <li key={i}>
-                  <Link
-                    href="#"
-                    className="hover:text-white transition"
-                  >
-                    {link}
-                  </Link>
-                </li>
-              )
-            )}
+            {["Home", "About", "Projects", "Services", "Contact"].map((link, i) => (
+              <li key={i}>
+                <Link href="#" className="hover:text-white transition">
+                  {link}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -78,8 +73,9 @@ export default function Footer() {
           © {new Date().getFullYear()} Samprada Aryal. Made with ❤️ and lots of coffee.
         </p>
         <p className="text-center md:text-right text-gray-400">
-          Built with <span className="text-white font-medium">React</span> &{" "}
-          <span className="text-white font-medium">Tailwind CSS</span>
+          Designed & developed by{" "}
+          <span className="text-white font-medium">Samprada Aryal</span> —
+          blending creativity with clean code.
         </p>
       </div>
     </footer>
