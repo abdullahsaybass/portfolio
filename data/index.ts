@@ -1,11 +1,12 @@
 import { links } from "@/config";
 
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
+  { name: "Projects", link: "/projects" },
+  { name: "Contact", link: "/contact" },
 ] as const;
+
 
 export const gridItems = [
   {
@@ -70,6 +71,288 @@ export const gridItems = [
     spareImg: "",
   },
 ] as const;
+export const projectsData = [
+  {
+    id: 1,
+    header: {
+      title: "Collaborative Design at Your Fingertips",
+      desc: "Figma Clone provides a seamless interface for designers to collaborate, prototype, and bring ideas to life effortlessly.",
+    },
+    sidebar: {
+      concept: "Design Collaboration Tool",
+      role: "UI/UX Design",
+      designer: "Your Name",
+    },
+    images: [
+      "/images/figma1.png",
+      "/images/figma2.png",
+      "/images/figma3.png",
+      "/images/figma4.png",
+      "/images/figma5.png",
+    ],
+    features: [
+      {
+        title: "Real-Time Collaboration",
+        description: "Collaborate with your team in real-time and instantly see updates as everyone works together.",
+        tags: ["Collaboration", "Prototyping"],
+        badge: "Assist",
+      },
+      {
+        title: "Intuitive Design Tools",
+        description: "Simplify even complex designs with user-friendly tools that speed up your workflow.",
+        tags: ["UI/UX", "Efficiency"],
+        badge: "Guide",
+      },
+      {
+        title: "Scalable Workspace",
+        description: "Easily organize multiple projects, components, and libraries in one centralized workspace.",
+        tags: ["Growth", "Scalability"],
+        badge: "Resolve",
+        hasButton: true,
+      },
+    ],
+  },
+  {
+    id: 2,
+    header: {
+      title: "Connecting Teams, Anytime, Anywhere",
+      desc: "Voom Call Clone delivers a modern video conferencing experience for smooth meetings and collaboration.",
+    },
+    sidebar: {
+      concept: "Video Conferencing App",
+      role: "UI/UX & Frontend",
+      designer: "Your Name",
+    },
+    images: [
+      "/images/voom1.png",
+      "/images/voom2.png",
+      "/images/voom3.png",
+      "/images/voom4.png",
+      "/images/voom5.png",
+    ],
+    features: [
+      {
+        title: "HD Video & Audio",
+        description: "Enjoy crisp, high-definition video and audio calls that feel as if everyone is in the same room.",
+        tags: ["Video", "Audio"],
+        badge: "Assist",
+      },
+      {
+        title: "Screen Sharing & Recording",
+        description: "Present ideas, share your screen, and record meetings easily for later review or collaboration.",
+        tags: ["Presentation", "Recording"],
+        badge: "Guide",
+      },
+      {
+        title: "Cross-Platform Support",
+        description: "Access your meetings seamlessly across web, desktop, and mobile devices without interruption.",
+        tags: ["Accessibility", "Flexibility"],
+        badge: "Resolve",
+        hasButton: true,
+      },
+    ],
+  },
+  {
+    id: 3,
+    header: {
+      title: "Smarter Workflows with AI Assistance",
+      desc: "Gemini AI Clone boosts productivity with AI-powered insights and task automation.",
+    },
+    sidebar: {
+      concept: "AI Productivity Tool",
+      role: "UI/UX & AI Integration",
+      designer: "Your Name",
+    },
+    images: [
+      "/images/gemini1.png",
+      "/images/gemini2.png",
+      "/images/gemini3.png",
+      "/images/gemini4.png",
+      "/images/gemini5.png",
+    ],
+    features: [
+      {
+        title: "AI-Powered Suggestions",
+        description: "Get actionable insights and intelligent recommendations to streamline your daily workflow.",
+        tags: ["AI", "Productivity"],
+        badge: "Assist",
+      },
+      {
+        title: "Task Automation",
+        description: "Automate repetitive and time-consuming tasks so your team can focus on high-value work.",
+        tags: ["Efficiency", "Automation"],
+        badge: "Guide",
+      },
+      {
+        title: "Scalable Analytics",
+        description: "Monitor progress and performance with AI-driven analytics and detailed visual reports.",
+        tags: ["Analytics", "Growth"],
+        badge: "Resolve",
+        hasButton: true,
+      },
+    ],
+  },
+  {
+    id: 4,
+    header: {
+      title: "Delicious Meals Delivered Fast",
+      desc: "Food App lets users order meals online and get fast delivery with a smooth interface.",
+    },
+    sidebar: {
+      concept: "Food Ordering App",
+      role: "UI/UX & Mobile Design",
+      designer: "Your Name",
+    },
+    images: [
+      "/images/food1.png",
+      "/images/food2.png",
+      "/images/food3.png",
+      "/images/food4.png",
+      "/images/food5.png",
+    ],
+    features: [
+      {
+        title: "Easy Menu Navigation",
+        description: "Quickly browse restaurants and menus with a smooth interface that makes ordering effortless.",
+        tags: ["Navigation", "UI/UX"],
+        badge: "Assist",
+      },
+      {
+        title: "Seamless Ordering",
+        description: "Add meals to the cart and checkout securely in just a few taps without any hassle.",
+        tags: ["Ordering", "Payment"],
+        badge: "Guide",
+      },
+      {
+        title: "Real-Time Delivery Tracking",
+        description: "Track your order live from preparation to doorstep for a transparent delivery experience.",
+        tags: ["Tracking", "Delivery"],
+        badge: "Resolve",
+        hasButton: true,
+      },
+    ],
+  },
+  {
+    id: 5,
+    header: {
+      title: "Smart Hiring with AI Resume Analysis",
+      desc: "AI Resume Analyzer helps recruiters quickly evaluate and rank candidates using intelligent algorithms.",
+    },
+    sidebar: {
+      concept: "AI Recruitment Tool",
+      role: "UI/UX & AI Integration",
+      designer: "Your Name",
+    },
+    images: [
+      "/images/resume1.png",
+      "/images/resume2.png",
+      "/images/resume3.png",
+      "/images/resume4.png",
+      "/images/resume5.png",
+    ],
+    features: [
+      {
+        title: "Automated Resume Scoring",
+        description: "Quickly score candidates based on skills, experience, and relevance to job requirements.",
+        tags: ["AI", "Scoring"],
+        badge: "Assist",
+      },
+      {
+        title: "Candidate Comparison",
+        description: "Easily compare multiple applicants side-by-side to make informed hiring decisions.",
+        tags: ["Comparison", "Insights"],
+        badge: "Guide",
+      },
+      {
+        title: "Faster Hiring Decisions",
+        description: "Leverage AI insights to streamline recruitment and make faster, data-driven choices.",
+        tags: ["Efficiency", "Hiring"],
+        badge: "Resolve",
+        hasButton: true,
+      },
+    ],
+  },
+  {
+    id: 6,
+    header: {
+      title: "Fashion E-commerce Made Effortless",
+      desc: "Fashion E-commerce platform provides users a smooth and elegant shopping experience.",
+    },
+    sidebar: {
+      concept: "Online Fashion Store",
+      role: "UI/UX & Web Design",
+      designer: "Your Name",
+    },
+    images: [
+      "/images/fashion1.png",
+      "/images/fashion2.png",
+      "/images/fashion3.png",
+      "/images/fashion4.png",
+      "/images/fashion5.png",
+    ],
+    features: [
+      {
+        title: "Elegant Product Showcase",
+        description: "Display products in a clean, visually appealing layout that attracts shoppers effortlessly.",
+        tags: ["Design", "E-commerce"],
+        badge: "Assist",
+      },
+      {
+        title: "Smooth Checkout Process",
+        description: "Enable users to pay quickly and securely with minimal steps and friction.",
+        tags: ["Checkout", "Payment"],
+        badge: "Guide",
+      },
+      {
+        title: "Personalized Recommendations",
+        description: "Offer AI-based product suggestions tailored to user preferences and browsing behavior.",
+        tags: ["AI", "Personalization"],
+        badge: "Resolve",
+        hasButton: true,
+      },
+    ],
+  },
+  {
+    id: 7,
+    header: {
+      title: "Simplifying Money Transfers Everywhere",
+      desc: "IME Pay (Flight Booking System) makes transactions simple and secure through mobile wallets.",
+    },
+    sidebar: {
+      concept: "Flight Booking System",
+      role: "UI/UX Design",
+      designer: "Sagar Shrestha",
+    },
+    images: [
+      "/images/project1.png",
+      "/images/project2.png",
+      "/images/project3.png",
+      "/images/project4.png",
+      "/images/project5.png",
+    ],
+    features: [
+      {
+        title: "Hassle-Free Wallet Management",
+        description: "Transfer and manage funds easily with a secure and intuitive mobile wallet interface.",
+        tags: ["Finance", "Wallet"],
+        badge: "Assist",
+      },
+      {
+        title: "Flight Booking Integration",
+        description: "Book flights and pay directly through your wallet with a seamless experience.",
+        tags: ["Booking", "Payment"],
+        badge: "Guide",
+      },
+      {
+        title: "Secure Transactions",
+        description: "All transfers and payments are protected, ensuring reliable and safe transactions every time.",
+        tags: ["Security", "Reliability"],
+        badge: "Resolve",
+        hasButton: true,
+      },
+    ],
+  },
+];
 
 export const projects = [
   {

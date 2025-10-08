@@ -1,27 +1,45 @@
 import { Approach } from "@/components/approach";
-import { Clients } from "@/components/clients";
 import { Experience } from "@/components/experience";
-import { Footer } from "@/components/footer";
-import { Grid } from "@/components/grid";
-import { Hero } from "@/components/hero";
-import { FloatingNav } from "@/components/ui/floating-nav";
+import Footer from "@/components/footer";
 import { RecentProjects } from "@/components/recent-projects";
-import { navItems } from "@/data";
-
+import Navbar from "@/components/navbar";
+import About from "@/components/About/About";
+import Contact from "@/components/contact/Contact";
+import Hero from "@/components/hero";
+import WorkProcess from "@/components/workprocess";
+import MyAdvantages from "@/components/myadvantage"
+import PortfolioSection from "@/components/Projects"
+import ExperienceJourney from '@/components/education'
+import ServicesSection from '@/components/ServicesSection'
+// import ProjectDetail from "@/components/projectdetails"
 const MainPage = () => {
   return (
-    <main className="relative mx-auto flex flex-col items-center justify-center overflow-clip bg-black-100 px-5 sm:px-10">
-      <FloatingNav navItems={navItems} />
+    <main className="relative flex flex-col items-center justify-center overflow-x-hidden bg-black">
 
-      <div className="w-full max-w-7xl">
-        <Hero />
-        <Grid />
-        <RecentProjects />
-        <Clients />
+      {/* === Full-width Hero Section === */}
+      <Navbar />
+      <Hero />
+      <MyAdvantages />
+      <PortfolioSection />
+      <ExperienceJourney />
+      <ServicesSection />
+      <WorkProcess />
+      <Footer />
+      {/* <ProjectDetail /> */}
+      {/* === Other content inside max-width wrapper === */}
+      <div className="w-full max-w-7xl px-5 sm:px-10">
+        
+        {/* <MyAdvantages /> */}
+        {/* <RecentProjects />
+
+        <MyAdvantages />
+        <WorkProcess />
         <Experience />
         <Approach />
-        <Footer />
+        <Contact /> */}
+        
       </div>
+
     </main>
   );
 };
