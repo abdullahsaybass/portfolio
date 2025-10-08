@@ -7,7 +7,7 @@ const features = [
   {
     title: "Advanced AI Streamlined Design",
     description:
-      "Nublien blends cutting-edge AI capabilities with sleek, modern design. It's built for agencies that need to showcase sophisticated technology in a user-friendly and visually compelling way.",
+      "Nublien blends cutting-edge AI capabilities with sleek, modern design. It&aposs built for agencies that need to showcase sophisticated technology in a user-friendly and visually compelling way.",
     tags: ["AI Design", "Tech Innovation"],
     badge: "Assist",
   },

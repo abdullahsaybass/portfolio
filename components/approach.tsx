@@ -17,7 +17,7 @@ export const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<MagicButton title="Phase 1" asChild className="bg-gradient-to-r from-[#0F4DFF] to-[#4895FC] text-white" />}
-          description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+          description="We&aposll collaborate to map out your website&aposs goals, target audience, and key functionalities. We&aposll discuss things like site structure, navigation, and content requirements."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -44,7 +44,7 @@ export const Approach = () => {
         <Card
           title="Development & Launch"
           icon={<MagicButton title="Phase 3" asChild className="bg-gradient-to-r from-[#0F4DFF] to-[#4895FC] text-white" />}
-          description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+          description="This is where the magic happens! Based on the approved design, I&aposll translate everything into functional code, building your website from the ground up."
         >
           <CanvasRevealEffect
             animationSpeed={3}

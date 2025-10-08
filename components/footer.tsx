@@ -13,7 +13,7 @@ export default function Footer() {
           <h3 className="text-2xl font-semibold text-white mb-3">Samprada Aryal</h3>
           <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs mx-auto lg:mx-0">
             Creating beautiful, functional digital experiences that make a
-            difference. Let's build something amazing together.
+            difference. Let&aposs build something amazing together.
           </p>
           <div className="flex justify-center lg:justify-start gap-4">
             {[

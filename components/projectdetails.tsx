@@ -289,7 +289,7 @@
 //         <div className="text-center">
 //           <h3 className="text-2xl font-bold text-white mb-6">Explore More Projects</h3>
 //           <p className="text-gray-400 mb-8 text-lg">
-//             Discover how I've helped other clients achieve their design goals
+//             Discover how I&aposve helped other clients achieve their design goals
 //           </p>
 //           <div className="flex flex-col sm:flex-row gap-4 justify-center">
 //             <Button 

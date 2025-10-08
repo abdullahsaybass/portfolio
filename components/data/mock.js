@@ -35,7 +35,7 @@ export const projects = [
       },
       {
         step: "Wireframing & Information Architecture",
-        description: "Created low-fidelity wireframes and defined the app's navigation structure",
+        description: "Created low-fidelity wireframes and defined the app&aposs navigation structure",
         duration: "1 week"
       },
       {
